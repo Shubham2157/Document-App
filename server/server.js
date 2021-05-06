@@ -12,7 +12,7 @@ mongoose.connect(process.env.database_url, {
 const io = require('socket.io')(process.env.PORT || 3001, {
     cors: {
         // client url 
-        origin: 'http://localhost:3000',
+        origin: 'https://document-app.vercel.app/',
         methods: ['GET', 'POST']
     }
 })
