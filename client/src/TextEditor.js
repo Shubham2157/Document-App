@@ -25,8 +25,8 @@ export default function TextEditor() {
 
     useEffect(() => {
         // server url
-        //const s = io('https://fierce-island-25971.herokuapp.com/')
-        const s = io('http://localhost:3001')
+        const s = io('https://fierce-island-25971.herokuapp.com/')
+        //const s = io('http://localhost:3001')
         setSocket(s)
 
         return() => {
